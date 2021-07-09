@@ -1,0 +1,156 @@
+.jumbotronContainer {
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.jumbotronContainer .jumbotronContentContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.jumbotronContainer .jumbotronContentContainer .profileWithCircles {
+  position: relative;
+  z-index: 0;
+  overflow: visible;
+  cursor: pointer;
+  width: 210px;
+  height: 210px;
+  margin: 0 auto 3rem auto;
+}
+.jumbotronContainer .jumbotronContentContainer .profileWithCircles svg {
+  position: absolute;
+  z-index: 2;
+  width: 210px;
+  height: 210px;
+  top: 0;
+}
+@media only screen and (min-width: 870px) {
+  .jumbotronContainer .jumbotronContentContainer .profileWithCircles svg {
+    width: inherit;
+    height: inherit;
+  }
+}
+.jumbotronContainer .jumbotronContentContainer .profileWithCircles .profilePictureContainer {
+  width: 210px;
+  height: 210px;
+  background-color: #ff9c9c;
+  border-radius: 100%;
+  position: absolute;
+  overflow: hidden;
+  bottom: 0;
+  top: 0;
+  transform: translateY(0.5px) translateX(0.5px);
+}
+.jumbotronContainer .jumbotronContentContainer .profileWithCircles .profilePictureContainer .profilePicture {
+  width: 100%;
+  max-width: 190px;
+  position: absolute;
+  bottom: 0;
+  left: 50px;
+  transform: translateX(-40px) translateY(25px);
+}
+@media only screen and (min-width: 870px) {
+  .jumbotronContainer .jumbotronContentContainer .profileWithCircles .profilePictureContainer .profilePicture {
+    max-width: 250px;
+    transform: translateX(-20px) translateY(50px);
+  }
+}
+@media only screen and (min-width: 870px) {
+  .jumbotronContainer .jumbotronContentContainer .profileWithCircles .profilePictureContainer {
+    width: 310px;
+    height: 310px;
+    transform: translateY(1px) translateX(1px);
+  }
+}
+@media only screen and (min-width: 870px) {
+  .jumbotronContainer .jumbotronContentContainer .profileWithCircles {
+    width: 310px;
+    height: 310px;
+    margin: 0;
+  }
+}
+.jumbotronContainer .jumbotronContentContainer .jumbotronTextContainer {
+  padding: 0 3rem;
+}
+.jumbotronContainer .jumbotronContentContainer .jumbotronTextContainer h1 {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+}
+@media only screen and (min-width: 670px) {
+  .jumbotronContainer .jumbotronContentContainer .jumbotronTextContainer h1 {
+    font-size: 6rem;
+  }
+}
+@media only screen and (min-width: 870px) {
+  .jumbotronContainer .jumbotronContentContainer .jumbotronTextContainer h1 {
+    font-size: 7.2rem;
+    margin-bottom: 3rem;
+  }
+}
+.jumbotronContainer .jumbotronContentContainer .jumbotronTextContainer p {
+  font-size: 1.7rem;
+  color: #7d7d7d;
+  margin-bottom: 2.5rem;
+}
+@media only screen and (min-width: 670px) {
+  .jumbotronContainer .jumbotronContentContainer .jumbotronTextContainer p {
+    font-size: 2.04rem;
+  }
+}
+@media only screen and (min-width: 870px) {
+  .jumbotronContainer .jumbotronContentContainer .jumbotronTextContainer p {
+    font-size: 2.72rem;
+    margin-bottom: 3rem;
+  }
+}
+.jumbotronContainer .jumbotronContentContainer .jumbotronTextContainer span {
+  color: black;
+}
+.jumbotronContainer .jumbotronContentContainer .jumbotronTextContainer .linksContainer {
+  display: flex;
+  font-size: 1.5rem;
+}
+.jumbotronContainer .jumbotronContentContainer .jumbotronTextContainer .linksContainer div:not(:last-child) {
+  margin-right: 1rem;
+}
+.jumbotronContainer .jumbotronContentContainer .jumbotronTextContainer .linksContainer .aContainer a {
+  color: #7d7d7d;
+  border-bottom: 2px solid transparent;
+  transition: 0.3s ease-in-out all;
+}
+.jumbotronContainer .jumbotronContentContainer .jumbotronTextContainer .linksContainer .aContainer a:hover {
+  border-bottom: 2px solid black;
+  color: black;
+}
+@media only screen and (min-width: 670px) {
+  .jumbotronContainer .jumbotronContentContainer .jumbotronTextContainer .linksContainer {
+    font-size: 1.65rem;
+  }
+}
+@media only screen and (min-width: 870px) {
+  .jumbotronContainer .jumbotronContentContainer .jumbotronTextContainer .linksContainer {
+    font-size: 2.25rem;
+  }
+}
+@media only screen and (min-width: 870px) {
+  .jumbotronContainer .jumbotronContentContainer .jumbotronTextContainer {
+    padding: 0;
+    max-width: 600px;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 870px) {
+  .jumbotronContainer .jumbotronContentContainer {
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 0 11rem;
+    justify-content: space-between;
+  }
+}/*# sourceMappingURL=Jumbotron.module.css.map */

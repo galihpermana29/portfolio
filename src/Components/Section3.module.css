@@ -1,0 +1,94 @@
+.section3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  padding: 0 3rem;
+  box-sizing: border-box;
+}
+.section3 h1 {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+}
+@media only screen and (min-width: 670px) {
+  .section3 h1 {
+    font-size: 6rem;
+  }
+}
+@media only screen and (min-width: 870px) {
+  .section3 h1 {
+    font-size: 7.2rem;
+    margin-bottom: 3rem;
+  }
+}
+.section3 p {
+  font-size: 1.7rem;
+  color: #7d7d7d;
+  margin-bottom: 2.5rem;
+}
+@media only screen and (min-width: 670px) {
+  .section3 p {
+    font-size: 2.04rem;
+  }
+}
+@media only screen and (min-width: 870px) {
+  .section3 p {
+    font-size: 2.72rem;
+    margin-bottom: 3rem;
+  }
+}
+.section3 span {
+  color: black;
+}
+.section3 .section3Container {
+  box-sizing: border-box;
+  margin: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+  padding: 1.5rem 3rem;
+}
+.section3 .section3Container:not(:first-child) {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+.section3 .section3Container img {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto 3rem auto;
+}
+@media only screen and (min-width: 870px) {
+  .section3 .section3Container img {
+    margin: 0 0 5rem 0;
+  }
+}
+.section3 .section3Container .textContainer {
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (min-width: 870px) {
+  .section3 .section3Container .textContainer .detailText {
+    max-width: 300px;
+  }
+}
+@media only screen and (min-width: 870px) {
+  .section3 .section3Container .textContainer .descText {
+    max-width: 500px;
+  }
+}
+@media only screen and (min-width: 870px) {
+  .section3 .section3Container .textContainer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media only screen and (min-width: 870px) {
+  .section3 .section3Container {
+    padding: 4rem 8rem;
+  }
+}
+@media only screen and (min-width: 870px) {
+  .section3 {
+    padding: 5rem 11rem;
+  }
+}/*# sourceMappingURL=Section3.module.css.map */

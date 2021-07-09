@@ -1,0 +1,117 @@
+.section4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  padding: 0 3rem;
+  background: url("../contactBG.png") no-repeat center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+.section4 h1 {
+  font-size: 4rem;
+  margin-bottom: 3rem;
+}
+@media only screen and (min-width: 529px) {
+  .section4 h1 {
+    font-size: 6rem;
+  }
+}
+@media only screen and (min-width: 870px) {
+  .section4 h1 {
+    font-size: 7.2rem;
+    margin-bottom: 3rem;
+  }
+}
+.section4 p {
+  font-size: 1.7rem;
+  color: #7d7d7d;
+  margin-bottom: 1rem;
+}
+@media only screen and (min-width: 670px) {
+  .section4 p {
+    font-size: 2.04rem;
+  }
+}
+@media only screen and (min-width: 870px) {
+  .section4 p {
+    font-size: 2.72rem;
+    margin-bottom: 3rem;
+  }
+}
+.section4 span {
+  color: black;
+}
+.section4 .fingerContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: -50px;
+}
+.section4 .fingerContainer img {
+  min-width: 100px;
+  max-width: 100px;
+  width: 100%;
+  left: 0;
+  right: 0;
+}
+@media only screen and (min-width: 670px) {
+  .section4 .fingerContainer img {
+    min-width: 110px;
+  }
+}
+@media only screen and (min-width: 870px) {
+  .section4 .fingerContainer img {
+    min-width: 130px;
+  }
+}
+.section4 .textContainer {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+.section4 .textContainer p {
+  letter-spacing: 0.2rem;
+  font-weight: 500;
+  color: black;
+}
+.section4 .textContainer h1 {
+  font-size: 5rem;
+}
+@media only screen and (min-width: 670px) {
+  .section4 .textContainer h1 {
+    font-size: 7rem;
+  }
+}
+@media only screen and (min-width: 870px) {
+  .section4 .textContainer h1 {
+    font-size: 10rem;
+    margin-bottom: 5rem;
+  }
+}
+.section4 .textContainer .buttonContainer a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: black;
+  padding: 0.5rem 1.5rem;
+  border: 1.5px solid black;
+  border-radius: 50px;
+  color: black;
+  cursor: pointer;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+@media only screen and (min-width: 870px) {
+  .section4 .textContainer .buttonContainer a {
+    border: 2px solid black;
+    font-size: 2rem;
+    padding: 1rem 3rem;
+  }
+}
+@media only screen and (min-width: 870px) {
+  .section4 {
+    min-height: 90vh;
+  }
+}/*# sourceMappingURL=Section4.module.css.map */

@@ -1,0 +1,114 @@
+.section2 {
+	$h1-size: 4rem;
+	$p-size: 1.7rem;
+	$a-size: 1.5rem;
+	$h1-tablet-size: 1.5;
+	$p-tablet-size: 1.2;
+	$a-tablet-size: 1.1;
+	$h1-desktop-size: 1.8;
+	$p-desktop-size: 1.6;
+	$a-desktop-size: 1.5;
+	$primary-color: black;
+	$secondary-color: #7d7d7d;
+
+	h1 {
+		font-size: $h1-size;
+		margin-bottom: 1.5rem;
+		@media only screen and (min-width: 670px) {
+			font-size: $h1-tablet-size * $h1-size;
+		}
+		@media only screen and (min-width: 870px) {
+			font-size: $h1-desktop-size * $h1-size;
+			margin-bottom: 2 * 1.5rem;
+		}
+	}
+
+	p {
+		font-size: $p-size;
+		color: $secondary-color;
+		margin-bottom: 2.5rem;
+		@media only screen and (min-width: 670px) {
+			font-size: $p-tablet-size * $p-size;
+		}
+		@media only screen and (min-width: 870px) {
+			font-size: $p-desktop-size * $p-size;
+			margin-bottom: 2 * 1.5rem;
+		}
+	}
+
+	span {
+		color: $primary-color;
+	}
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 90vh;
+	padding: 0 3rem;
+	.section2Container {
+		margin: 3rem 0;
+		display: flex;
+		flex-direction: column;
+		// border: 1px solid red;
+
+		.imgContainer {
+			width: 100%;
+			img {
+				width: 100%;
+				min-width: 220px;
+				max-width: 300px;
+				display: block;
+				margin: 0 auto 3rem auto;
+
+				@media only screen and (min-width: 870px) {
+					min-width: 300px;
+					max-width: 470px;
+					margin: 0;
+					width: 100%;
+				}
+			}
+		}
+
+		.textContainer {
+			.buttonContainer {
+				a {
+					// border: 1px solid red;
+					text-decoration: none;
+					font-size: 1.5rem;
+					color: black;
+					padding: 0.5rem 1.5rem;
+					border: 1.5px solid black;
+					border-radius: 50px;
+					color: black;
+					cursor: pointer;
+
+					@media only screen and (min-width: 870px) {
+						// display: block;
+						border: 2px solid black;
+						font-size: 2rem;
+						padding: 1rem 3rem;
+					}
+				}
+			}
+
+			@media only screen and (min-width: 870px) {
+				// max-width: 500px;
+				width: 100%;
+				// border: 1px solid green;
+				margin-left: 7rem;
+			}
+		}
+
+		@media only screen and (min-width: 870px) {
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+			// justify-content: space-between;
+			width: 100%;
+		}
+	}
+
+	@media only screen and (min-width: 870px) {
+		padding: 0 11rem;
+	}
+}

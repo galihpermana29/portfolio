@@ -1,0 +1,55 @@
+@font-face {
+   font-family: 'SF Pro Display';
+   
+   src: url('./fontface/SFProDisplay-Regular.woff2') format('woff2'),
+       url('./fontface/SFProDisplay-Regular.woff') format('woff'),
+       url('./fontface/SFProDisplay-Regular.ttf') format('truetype');
+   font-weight: normal;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: 'SF Pro Display';
+   src: url('./fontface/SFProDisplay-Thin.woff2') format('woff2'),
+       url('./fontface/SFProDisplay-Thin.woff') format('woff'),
+       url('./fontface/SFProDisplay-Thin.ttf') format('truetype');
+   font-weight: 100;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: 'SF Pro Display';
+   src: url('./fontface/SFProDisplay-Semibold.woff2') format('woff2'),
+       url('./fontface/SFProDisplay-Semibold.woff') format('woff'),
+       url('./fontface/SFProDisplay-Semibold.ttf') format('truetype');
+   font-weight: 600;
+   font-style: normal;
+   font-display: swap;
+}
+
+$primary-color: black;
+$secondary-color: #7d7d7d;
+
+
+*{
+   margin: 0;
+   padding: 0;
+}
+
+html{
+   font-size: 10px;
+}
+
+body{
+   font-family:'SF Pro Display';
+   font-weight: normal;
+
+}
+
+a{
+   text-decoration: none;
+   color: $primary-color;
+}
+

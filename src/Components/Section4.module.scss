@@ -1,0 +1,131 @@
+.section4 {
+	$h1-size: 4rem;
+	$p-size: 1.7rem;
+	$a-size: 1.5rem;
+	$h1-tablet-size: 1.5;
+	$p-tablet-size: 1.2;
+	$a-tablet-size: 1.1;
+	$h1-desktop-size: 1.8;
+	$p-desktop-size: 1.6;
+	$a-desktop-size: 1.5;
+	$primary-color: black;
+	$secondary-color: #7d7d7d;
+
+	h1 {
+		font-size: $h1-size;
+		margin-bottom: 3rem;
+		@media only screen and (min-width: 529px) {
+			font-size: $h1-tablet-size * $h1-size;
+		}
+		@media only screen and (min-width: 870px) {
+			font-size: $h1-desktop-size * $h1-size;
+			margin-bottom: 2 * 1.5rem;
+		}
+	}
+
+	p {
+		font-size: $p-size;
+		color: $secondary-color;
+		margin-bottom: 1rem;
+		@media only screen and (min-width: 670px) {
+			font-size: $p-tablet-size * $p-size;
+		}
+		@media only screen and (min-width: 870px) {
+			font-size: $p-desktop-size * $p-size;
+			margin-bottom: 2 * 1.5rem;
+		}
+	}
+
+	span {
+		color: $primary-color;
+	}
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 70vh;
+	// height: 500px;
+	padding: 0 3rem;
+	// border: 1px solid red;
+	background: url('../contactBG.png') no-repeat center;
+	background-size: cover;
+	position: relative;
+	overflow: hidden;
+	// background-size: 400px;
+
+	.fingerContainer {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		bottom: -50px;
+		// opacity: .8;
+		img {
+			min-width: 100px;
+			max-width: 100px;
+			width: 100%;
+			left: 0;
+			right: 0;
+         @media only screen and (min-width: 670px) {
+            min-width: 110px;
+         }  
+			@media only screen and (min-width: 870px) {
+				min-width: 130px;
+				// max-width: 100px;
+			}
+		}
+	}
+
+	.textContainer {
+		// border: 1px solid red;
+		text-align: center;
+		position: relative;
+		z-index: 1;
+
+		p {
+			letter-spacing: 0.2rem;
+			font-weight: 500;
+			color: black;
+		}
+
+		h1 {
+			font-size: 5rem;
+         // border: 1px solid red;
+         // margin-bottom: 2rem;
+         @media only screen and (min-width: 670px) {
+            font-size: 7rem;
+         }
+			@media only screen and (min-width: 870px) {
+				font-size: 10rem;
+            margin-bottom: 5rem;
+			}
+		}
+
+		.buttonContainer {
+			a {
+				// border: 1px solid red;
+				text-decoration: none;
+				font-size: 1.5rem;
+				color: black;
+				padding: 0.5rem 1.5rem;
+				border: 1.5px solid black;
+				border-radius: 50px;
+				color: black;
+				cursor: pointer;
+				box-shadow: 0 4px 4px rgba($color: #000000, $alpha: 0.25);
+
+				@media only screen and (min-width: 870px) {
+					// display: block;
+					border: 2px solid black;
+					font-size: 2rem;
+					padding: 1rem 3rem;
+				}
+			}
+		}
+	}
+
+	@media only screen and (min-width: 870px) {
+		min-height: 90vh;
+	}
+}

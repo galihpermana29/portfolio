@@ -1,0 +1,59 @@
+.section5 {
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  padding: 0 3rem;
+}
+.section5 .section5Container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.section5 .section5Container .iconContainer {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  margin-bottom: 10rem;
+  width: 100%;
+  min-width: 50px;
+  max-width: 250px;
+}
+.section5 .section5Container .iconContainer img {
+  width: 60px;
+}
+@media only screen and (min-width: 870px) {
+  .section5 .section5Container .iconContainer img {
+    width: 70px;
+  }
+}
+.section5 .section5Container .footbar {
+  justify-self: flex-end;
+}
+.section5 .section5Container .footbar .footBar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.section5 .section5Container .footbar .footBar div {
+  width: 100%;
+  height: 0.5px;
+  background-color: black;
+}
+.section5 .section5Container .footbar .footBar img {
+  width: 45px;
+  margin: 0 1rem;
+}
+.section5 .section5Container .footbar .footNote {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0 2rem 0;
+}
+.section5 .section5Container .footbar .footNote p {
+  font-size: 1.5rem;
+}
+@media only screen and (min-width: 870px) {
+  .section5 {
+    min-height: 70vh;
+  }
+}/*# sourceMappingURL=Section5.module.css.map */

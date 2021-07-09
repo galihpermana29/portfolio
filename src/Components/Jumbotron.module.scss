@@ -1,0 +1,176 @@
+$h1-size: 4rem;
+$p-size: 1.7rem;
+$a-size: 1.5rem;
+$h1-tablet-size: 1.5;
+$p-tablet-size: 1.2;
+$a-tablet-size: 1.1;
+$h1-desktop-size: 1.8;
+$p-desktop-size: 1.6;
+$a-desktop-size: 1.5;
+$primary-color: black;
+$secondary-color: #7d7d7d;
+
+.jumbotronContainer{
+   height: 100vh;
+   // border: 1px solid red;
+   position: absolute;
+   left: 0;
+   right: 0;
+   top: 0;
+   z-index: 1;
+   padding-top: 30px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   .jumbotronContentContainer{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      // border: 1px solid red;
+
+      .profileWithCircles {
+         position: relative;
+         z-index: 0;
+         overflow: visible;
+         cursor: pointer;
+         width: 210px;
+         height: 210px;
+         margin: 0 auto 3rem auto;
+         // border: 1px solid green;
+         svg {
+            position: absolute;
+            z-index: 2;
+            width: 210px;
+            height: 210px;
+            top: 0;
+            @media only screen and (min-width: 870px) {
+               width: inherit;
+               height: inherit;
+               // border: 1px solid pink;
+            }
+            
+         }
+      
+         .profilePictureContainer {
+            width: 210px;
+            height: 210px;
+            background-color: #ff9c9c;
+            border-radius: 100%;
+            position: absolute;
+            overflow: hidden;
+            bottom: 0;
+            top: 0;
+            transform: translateY(.5px) translateX(.5px);
+      
+            .profilePicture {
+               width: 100%;
+               max-width: 190px;
+               position: absolute;
+               bottom: 0;
+               left: 50px;
+               transform: translateX(-40px) translateY(25px);
+               @media only screen and (min-width: 870px) {
+                  max-width: 250px;
+                  transform: translateX(-20px) translateY(50px);
+               }
+               
+            }
+
+            @media only screen and (min-width: 870px) {
+            	width: 310px;
+               height: 310px;
+               transform: translateY(1px) translateX(1px);
+            }
+            
+         }
+         @media only screen and (min-width: 870px) {
+            	width: 310px;
+               height: 310px;
+               // border: 2px solid yellow;
+               margin: 0;
+               // margin: 0;
+         }
+      }   
+
+      .jumbotronTextContainer{
+         padding: 0 3rem;
+         h1{
+            font-size: $h1-size;
+            margin-bottom: 1.5rem;
+            @media only screen and (min-width: 670px) {
+               font-size: $h1-tablet-size * $h1-size;
+               // margin-bottom: 1.5 * 1.5rem;
+            }
+            @media only screen and (min-width: 870px) {
+               font-size: $h1-desktop-size * $h1-size;
+               margin-bottom: 2 * 1.5rem;
+            }
+         }
+   
+         p{
+            font-size: $p-size;
+            color: $secondary-color;
+            margin-bottom: 2.5rem;
+            @media only screen and (min-width: 670px) {
+               font-size: $p-tablet-size * $p-size;
+               // margin-bottom: 1.5 * 1.5rem;
+            }
+            @media only screen and (min-width: 870px) {
+               font-size: $p-desktop-size * $p-size;
+               margin-bottom: 2 * 1.5rem;
+            }
+         }
+   
+         span{
+            color: $primary-color;
+         }
+   
+         .linksContainer{
+            display: flex;
+            font-size: $a-size;
+   
+            div:not(:last-child){
+               margin-right: 1rem;
+            }
+
+            .aContainer{
+               
+               a{
+                  color: $secondary-color;
+                  border-bottom: 2px solid transparent;
+                  transition: .3s ease-in-out all;
+                  &:hover{
+                     border-bottom: 2px solid black;
+                     color: $primary-color;
+                  }
+               }
+               
+            }
+
+            @media only screen and (min-width: 670px) {
+               font-size: $a-tablet-size * $a-size;
+               // margin-bottom: 1.5 * 1.5rem;
+            }
+            @media only screen and (min-width: 870px) {
+               font-size: $a-desktop-size * $a-size;
+            }
+         }
+
+         @media only screen and (min-width: 870px) {
+            padding: 0;
+            // border: 1px solid red;
+            max-width: 600px;
+            width: 100%;
+         }
+      }
+      
+      @media only screen and (min-width: 870px) {
+         flex-direction: row-reverse;
+         align-items: center;
+         padding: 0 11rem;
+         justify-content: space-between;
+      }
+   }
+}
+

@@ -1,0 +1,109 @@
+.navbarContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  position: relative;
+  z-index: 2;
+}
+.navbarContainer .logo {
+  width: 50px;
+}
+@media only screen and (min-width: 670px) {
+  .navbarContainer .logo {
+    width: 70px;
+  }
+}
+.navbarContainer .linkContainer {
+  display: none;
+}
+.navbarContainer .linkContainer a {
+  color: #7d7d7d;
+}
+.navbarContainer .linkContainer a:hover {
+  color: black;
+  transition: 0.5s ease all;
+}
+.navbarContainer .linkContainer a:not(:last-child) {
+  margin-right: 4.6rem;
+}
+@media only screen and (min-width: 870px) {
+  .navbarContainer .linkContainer {
+    display: block;
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (min-width: 670px) {
+  .navbarContainer {
+    padding: 2rem 11rem;
+  }
+}
+
+.menuIcon {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+.menuIcon .menuIconCheckBox {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  cursor: pointer;
+  z-index: 2;
+  -webkit-touch-callout: none;
+  position: absolute;
+  opacity: 0;
+}
+.menuIcon div {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 22px;
+  height: 12px;
+}
+.menuIcon span {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: var(--bar-bg, #000);
+  border-radius: 1px;
+  transition: all 0.2s cubic-bezier(0.1, 0.82, 0.76, 0.965);
+}
+.menuIcon span:first-of-type {
+  top: 0;
+}
+.menuIcon span:last-of-type {
+  bottom: 0;
+}
+.menuIcon.active span:first-of-type,
+.menuIcon .menuIconCheckBox:checked + div span:first-of-type {
+  transform: rotate(45deg);
+  top: 5px;
+}
+.menuIcon.active span:last-of-type,
+.menuIcon .menuIconCheckBox:checked + div span:last-of-type {
+  transform: rotate(-45deg);
+  bottom: 5px;
+}
+.menuIcon.active:hover span:first-of-type, .menuIcon.active:hover span:last-of-type, .menuIcon:hover .menuIconCheckBox + div span:first-of-type, .menuIcon:hover .menuIconCheckBox + div span:last-of-type {
+  width: 22px;
+}
+@media (min-width: 1024px) {
+  .menuIcon:hover span:first-of-type {
+    width: 26px;
+  }
+  .menuIcon:hover span:last-of-type {
+    width: 12px;
+  }
+}
+@media only screen and (min-width: 870px) {
+  .menuIcon {
+    display: none;
+  }
+}/*# sourceMappingURL=Navbar.module.css.map */

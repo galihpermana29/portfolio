@@ -1,0 +1,100 @@
+.section2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  padding: 0 3rem;
+}
+.section2 h1 {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+}
+@media only screen and (min-width: 670px) {
+  .section2 h1 {
+    font-size: 6rem;
+  }
+}
+@media only screen and (min-width: 870px) {
+  .section2 h1 {
+    font-size: 7.2rem;
+    margin-bottom: 3rem;
+  }
+}
+.section2 p {
+  font-size: 1.7rem;
+  color: #7d7d7d;
+  margin-bottom: 2.5rem;
+}
+@media only screen and (min-width: 670px) {
+  .section2 p {
+    font-size: 2.04rem;
+  }
+}
+@media only screen and (min-width: 870px) {
+  .section2 p {
+    font-size: 2.72rem;
+    margin-bottom: 3rem;
+  }
+}
+.section2 span {
+  color: black;
+}
+.section2 .section2Container {
+  margin: 3rem 0;
+  display: flex;
+  flex-direction: column;
+}
+.section2 .section2Container .imgContainer {
+  width: 100%;
+}
+.section2 .section2Container .imgContainer img {
+  width: 100%;
+  min-width: 220px;
+  max-width: 300px;
+  display: block;
+  margin: 0 auto 3rem auto;
+}
+@media only screen and (min-width: 870px) {
+  .section2 .section2Container .imgContainer img {
+    min-width: 300px;
+    max-width: 470px;
+    margin: 0;
+    width: 100%;
+  }
+}
+.section2 .section2Container .textContainer .buttonContainer a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: black;
+  padding: 0.5rem 1.5rem;
+  border: 1.5px solid black;
+  border-radius: 50px;
+  color: black;
+  cursor: pointer;
+}
+@media only screen and (min-width: 870px) {
+  .section2 .section2Container .textContainer .buttonContainer a {
+    border: 2px solid black;
+    font-size: 2rem;
+    padding: 1rem 3rem;
+  }
+}
+@media only screen and (min-width: 870px) {
+  .section2 .section2Container .textContainer {
+    width: 100%;
+    margin-left: 7rem;
+  }
+}
+@media only screen and (min-width: 870px) {
+  .section2 .section2Container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 870px) {
+  .section2 {
+    padding: 0 11rem;
+  }
+}/*# sourceMappingURL=Section2.module.css.map */

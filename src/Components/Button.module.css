@@ -1,0 +1,19 @@
+.buttonContainer {
+  display: none;
+}
+.buttonContainer a {
+  border: 1px solid red;
+  text-decoration: none;
+  font-size: 2.5rem;
+  color: black;
+  padding: 10px 30px;
+  border: 2px solid black;
+  border-radius: 50px;
+  color: black;
+  cursor: pointer;
+}
+@media only screen and (min-width: 870px) {
+  .buttonContainer {
+    display: block;
+  }
+}/*# sourceMappingURL=Button.module.css.map */
