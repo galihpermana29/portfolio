@@ -6,15 +6,25 @@ import Section4 from './Components/Section4';
 import Section5 from './Components/Section5';
 
 function App() {
-  return (
-    <div className="Layout">
-       <Section1/>
-       <Section2/>
-       <Section3/>
-       <Section4/>
-       <Section5/>
-    </div>
-  );
+	return (
+		<div className="Layout">
+			<div id="home">
+				<Section1 />
+			</div>
+			<div id="about">
+				<Section2 />
+			</div>
+			<div id="projects">
+				<Section3 />
+			</div>
+			<div id="hire">
+				<Section4 />
+			</div>
+			<div>
+				<Section5 />
+			</div>
+		</div>
+	);
 }
 
 export default App;

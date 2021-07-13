@@ -8,6 +8,8 @@
 }
 .navbarContainer .logo {
   width: 50px;
+  position: relative;
+  z-index: 2;
 }
 @media only screen and (min-width: 670px) {
   .navbarContainer .logo {
@@ -29,9 +31,51 @@
 }
 @media only screen and (min-width: 870px) {
   .navbarContainer .linkContainer {
-    display: block;
     font-size: 2.5rem;
   }
+}
+.navbarContainer .linkContainer.open {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  text-align: center;
+  background-color: #ff9898;
+  width: 100%;
+  left: 0;
+  height: 200vh;
+  -webkit-animation: scrollDown 0.5s ease-in-out;
+          animation: scrollDown 0.5s ease-in-out;
+}
+.navbarContainer .linkContainer.open div {
+  margin-top: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 180px;
+  text-align: center;
+}
+.navbarContainer .linkContainer.open div span {
+  color: #7d7d7d;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+}
+.navbarContainer .linkContainer.open div a {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 600;
+  transition: 0.2s ease transform;
+  width: 100%;
+}
+.navbarContainer .linkContainer.open div a:hover {
+  transform: scale(1.1);
+}
+.navbarContainer .linkContainer.open div p {
+  margin-top: 10rem;
+  font-size: 1.2rem;
+  width: 100%;
+  color: #7d7d7d;
 }
 @media only screen and (min-width: 670px) {
   .navbarContainer {
@@ -39,6 +83,27 @@
   }
 }
 
+@-webkit-keyframes scrollDown {
+  from {
+    height: 0;
+    opacity: 0;
+  }
+  to {
+    height: 200vh;
+    opacity: 1;
+  }
+}
+
+@keyframes scrollDown {
+  from {
+    height: 0;
+    opacity: 0;
+  }
+  to {
+    height: 200vh;
+    opacity: 1;
+  }
+}
 .menuIcon {
   position: relative;
   width: 50px;
@@ -100,10 +165,5 @@
   }
   .menuIcon:hover span:last-of-type {
     width: 12px;
-  }
-}
-@media only screen and (min-width: 870px) {
-  .menuIcon {
-    display: none;
   }
 }/*# sourceMappingURL=Navbar.module.css.map */

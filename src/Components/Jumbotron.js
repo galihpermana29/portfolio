@@ -55,11 +55,11 @@ const Jumbotron = () => {
 							cy="210"
 							r="207.5"
 							stroke="#8a3ab9"
-							stroke-dashoffset="0"
-							stroke-width="7"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							stroke-dasharray="1"
+							strokeDashoffset="0"
+							strokeWidth="7"
+							strokeLinecap="round"
+							strokeLinejoin="round"
+							strokeDasharray="1"
 							className={styles.borderProfile}
 							ref={borderProfile}
 						/>
@@ -84,7 +84,7 @@ const Jumbotron = () => {
 								ref={profileOutline}
 								d="M40.5 315C22.1 314.2 8.5 324 4 329V405.5H366.5V275H356C346.4 270.2 335.667 272 331.5 273.5C308.7 281.1 280 274.333 268.5 270C248.5 261.6 244.833 237.833 245.5 227C244.7 211 254.5 199.667 259.5 196V183.5C269.9 183.5 277.833 175.833 280.5 172C280.5 168 283.833 159.667 285.5 156C288.7 147.2 283.5 139 280.5 136L281.5 130C289.5 118.4 284.833 101.833 281.5 95C281.9 68.2 263 46.5 253.5 39C235.9 27 211.833 24 202 24C184.8 8.79999 176.833 19 175 26C172.6 40.8 163 40.8333 158.5 39C137.7 29.8 124.5 47.8333 120.5 58L112 80C108.8 95.2 112.333 110.667 114.5 116.5L114 141.5C110.8 142.7 108.333 147.333 107.5 149.5V167C111.5 169.8 116.167 177.833 118 181.5V187.5L128 197C147.6 210.2 150.5 240.167 149.5 253.5C149.9 270.7 142 280.333 138 283C127.6 282.2 122.333 282.667 121 283L119.5 284L108.5 291.5C101.7 300.3 89 306.167 83.5 308C72.3 307.6 63.5 308.833 60.5 309.5C54.1 312.7 44.5 314.5 40.5 315Z"
 								stroke="white"
-								stroke-width="5"
+								strokeWidth="5"
 							/>
 							<defs>
 								<pattern
@@ -123,11 +123,11 @@ const Jumbotron = () => {
 					</p>
 					<div className={styles.linksContainer}>
 						<div className={styles.aContainer}>
-							<a href="">Readme</a>
+							<a href="/#about">Readme</a>
 						</div>
 						<div style={{ fontWeight: 600 }}> or </div>
 						<div className={styles.aContainer}>
-							<a href="">View Projects</a>
+							<a href="/#projects">View Projects</a>
 						</div>
 					</div>
 				</div>

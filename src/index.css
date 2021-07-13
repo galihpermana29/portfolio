@@ -26,6 +26,7 @@
 
 html {
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -37,3 +38,5 @@ a {
   text-decoration: none;
   color: black;
 }/*# sourceMappingURL=index.css.map */
+
+ 

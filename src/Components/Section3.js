@@ -7,8 +7,8 @@ const Section3 = () => {
 			<div>
 				{data.map(({ id, judul, gif, detail, desc, link }) => {
 					return (
-						<>
-							<div className={styles.section3Container} key={id}>
+						<div key={id}>
+							<div className={styles.section3Container} >
 								<h1>{judul}</h1>
 								<img
 									src={`${process.env.PUBLIC_URL}/assets/wetravs.gif`}
@@ -45,7 +45,7 @@ const Section3 = () => {
 									</div>
 								</div>
 							</div>
-						</>
+						</div>
 					);
 				})}
 			</div>
