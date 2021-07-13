@@ -1,17 +1,17 @@
 import React, { useEffect, useRef } from 'react';
 import styles from './Jumbotron.module.css';
-import { TimelineMax } from 'gsap';
+import { gsap } from 'gsap';
 
 const Jumbotron = () => {
 	const profilePictureContainer = useRef(null);
 	const profilePicture = useRef(null);
 	const profileOutline = useRef(null);
 	const borderProfile = useRef(null);
-	let tl = new TimelineMax({
+	let tl = gsap.timeline({
 		defaults: { duration: 0.7, opacity: 0 },
 	});
 
-	let tl2 = new TimelineMax({
+	let tl2 = gsap.timeline({
 		defaults: {
 			duration: 6,
 			delay: 1,
