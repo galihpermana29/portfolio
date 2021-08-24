@@ -12,7 +12,7 @@ $secondary-color: #7d7d7d;
 
 .jumbotronContainer{
    height: 100vh;
-   // border: 1px solid red;
+  //  border: 1px solid red;
    position: absolute;
    left: 0;
    right: 0;
@@ -25,6 +25,7 @@ $secondary-color: #7d7d7d;
 
    .jumbotronContentContainer{
       width: 100%;
+      max-width: 1090px;
       display: flex;
       flex-direction: column;
       // border: 1px solid red;

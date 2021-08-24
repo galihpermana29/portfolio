@@ -7,7 +7,7 @@ import Section5 from './Components/Section5';
 
 function App() {
 	return (
-		<div className="Layout">
+		<div className="Layout" >
 			<div id="home">
 				<Section1 />
 			</div>

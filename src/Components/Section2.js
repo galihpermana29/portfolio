@@ -45,7 +45,7 @@ const Section2 = () => {
 						className={styles.buttonContainer}
 					>
 						<a
-							href="https://drive.google.com/file/d/16SARDcvajSfwV604iGBpEPwQ-PYfQKxg/view?usp=sharing"
+							href="https://drive.google.com/drive/folders/1AMsD6sGVaa5kLtB3v2zPNanczrfPTyJf?usp=sharing"
 							target="_blank"
 							rel="noreferrer"
 						>

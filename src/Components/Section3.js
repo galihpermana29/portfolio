@@ -10,7 +10,7 @@ const Section3 = () => {
 					return (
 						<div key={id}>
 							<div className={styles.section3Container}>
-								<h1>{judul}</h1>
+								<h1 className={styles.judulSection3}>{judul}</h1>
 								<Tilt
 									options={{
 										max: 2,
@@ -22,6 +22,7 @@ const Section3 = () => {
 									<img
 										src={`${process.env.PUBLIC_URL}/assets/${gif}`}
 										alt={gif}
+                    className={styles.imgSection3}
 									/>
 								</Tilt>
 								<div className={styles.textContainer}>

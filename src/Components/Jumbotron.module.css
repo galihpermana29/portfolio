@@ -12,6 +12,7 @@
 }
 .jumbotronContainer .jumbotronContentContainer {
   width: 100%;
+  max-width: 1090px;
   display: flex;
   flex-direction: column;
 }

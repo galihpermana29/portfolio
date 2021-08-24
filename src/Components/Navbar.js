@@ -88,10 +88,12 @@ const Navbar = () => {
 					fontWeight: '600',
 					justifyContent: 'space-between',
 				}}
-            onClick={handleMenuIcon}
+				onClick={handleMenuIcon}
 			>
-				<p style={{ position: 'relative', zIndex: 2, cursor: 'pointer' }}>MENU</p>
-				<div className={`${styles.menuIcon} `} >
+				<p style={{ position: 'relative', zIndex: 2, cursor: 'pointer' }}>
+					MENU
+				</p>
+				<div className={`${styles.menuIcon} `}>
 					<input
 						type="checkbox"
 						className={styles.menuIconCheckBox}
