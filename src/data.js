@@ -1,5 +1,18 @@
 export const data = [
 	{
+		id: 6,
+		judul: 'Raja Brawijaya - Landing Page.',
+		gif: 'raja.png',
+		detail: {
+			design: 'UI Team',
+			tools: 'React Js, TailwindCSS',
+			year: 2021,
+		},
+		desc: 'Last semester break I signed up for the new student admissions committee at my campus. Assigned as a frontend developer in charge of the landing page section with the UI and Content Writer team, this rajabrawijaya.ub.ac.id landing page can be completed within 2 weeks. This website is made with React JS and TailwindCSS as the css framework. There is also RAJA Apps as a place to collect assignments for new students.',
+		link: 'https://rajabrawijaya.ub.ac.id/#/',
+		sc: '',
+	},
+	{
 		id: 1,
 		judul: 'WoodCraft - ECommerce.',
 		gif: 'woodcraft.png',
