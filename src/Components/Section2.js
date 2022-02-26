@@ -1,15 +1,26 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import styles from './Section2.module.css';
 import Fade from 'react-reveal/Fade';
 import Tilt from 'react-tilt';
+import hoverEffect from 'hover-effect';
+
 const Section2 = () => {
+
 	return (
 		<div className={styles.section2}>
 			<div className={styles.section2Container}>
 				<div className={styles.imgContainer}>
-					<Tilt options={{max: 8, perspective: 1000, scale: 1, reverse: false}}>
-						<img
+					<Tilt
+						options={{
+							max: 8,
+							perspective: 1000,
+							scale: 1,
+							reverse: false,
+						}}
+					>
+					{/* <div ref={images}></div> */}
+					<img
 							src={`${process.env.PUBLIC_URL}/assets/galih.png`}
 							alt="galih permana"
 						/>

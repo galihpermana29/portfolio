@@ -8,10 +8,10 @@ $secondary-color: #7d7d7d;
 	padding: 1rem 3rem;
 	position: relative;
 	z-index: 2;
-  // border: 1px solid red;
-  // max-width: 1090px;
-  // width: 100%;
-  // justify-self: center;
+	// border: 1px solid red;
+	// max-width: 1090px;
+	// width: 100%;
+	// justify-self: center;
 	// background-color: #f2f2f2;
 
 	.logo {
@@ -26,9 +26,9 @@ $secondary-color: #7d7d7d;
 	.linkContainer {
 		// border: 1px solid red;
 		display: none;
-      // visibility: hidden;
-      // height: 10px;
-      // transition: .4s ease all;
+		// visibility: hidden;
+		// height: 10px;
+		// transition: .4s ease all;
 
 		a {
 			color: $secondary-color;
@@ -45,8 +45,8 @@ $secondary-color: #7d7d7d;
 		@media only screen and (min-width: 870px) {
 			// display: block;
 			font-size: 2.5rem;
-         // visibility: visible;
-         // height: fit-content;
+			// visibility: visible;
+			// height: fit-content;
 		}
 	}
 
@@ -60,8 +60,8 @@ $secondary-color: #7d7d7d;
 		width: 100%;
 		left: 0;
 		height: 200vh;
-      animation: scrollDown .5s ease-in-out;
-      // visibility: visible;
+		animation: scrollDown 0.5s ease-in-out;
+		// visibility: visible;
 
 		div {
 			margin-top: 500px;
@@ -71,32 +71,36 @@ $secondary-color: #7d7d7d;
 			height: 180px;
 			text-align: center;
 
-         span{
-            color: $secondary-color;
-            letter-spacing: 1px;
-            font-size: 1.2rem;
-            margin-bottom: 3rem;
-         }
+			span {
+				color: $secondary-color;
+				letter-spacing: 1px;
+				font-size: 1.2rem;
+				margin-bottom: 3rem;
+			}
 
 			a {
 				font-size: 3rem;
 				text-align: center;
-            font-weight: 600;
+				font-weight: 600;
 				// border: 1px solid red;
-            transition: .2s ease transform;
+				transition: 0.2s ease transform;
 				width: 100%;
-            &:hover{
-               transform: scale(1.1);
-            }
+				&:hover {
+					transform: scale(1.1);
+				}
+
+				@media only screen and (min-width: 670px) {
+					font-size: 4rem;
+				}
 			}
 
-         p{
-            margin-top: 10rem;
-            font-size: 1.2rem;
-            width: 100%;
-            color: $secondary-color;
-            // padding: 2rem;
-         }
+			p {
+				margin-top: 10rem;
+				font-size: 1.2rem;
+				width: 100%;
+				color: $secondary-color;
+				// padding: 2rem;
+			}
 		}
 		// z-index: 1;
 		// top: 0;

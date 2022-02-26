@@ -64,6 +64,9 @@ const Navbar = () => {
 					<a href="/#projects" rel="canonical" onClick={handleMenuIcon}>
 						Projects
 					</a>
+					<a href="https://galih-blog.vercel.app/" target="_blank" rel="canonical" onClick={handleMenuIcon}>
+						Blog
+					</a>
 					<a href="/#hire" rel="canonical" onClick={handleMenuIcon}>
 						Hire
 					</a>

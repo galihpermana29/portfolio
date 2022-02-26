@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import styles from './Section3.module.css';
 import { data } from '../data';
 import Tilt from 'react-tilt';
+import hoverEffect from 'hover-effect';
+
 const Section3 = () => {
 	return (
 		<div className={styles.section3}>
@@ -22,7 +24,7 @@ const Section3 = () => {
 									<img
 										src={`${process.env.PUBLIC_URL}/assets/${gif}`}
 										alt={gif}
-                    className={styles.imgSection3}
+										className={styles.imgSection3}
 									/>
 								</Tilt>
 								<div className={styles.textContainer}>
